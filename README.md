@@ -1,4 +1,4 @@
-# 🚀 Claude SEO Skills Suite
+# Claude SEO Skills Suite
 
 A production-grade collection of **8 specialized SEO & AI Search Skills** crafted for **Anthropic Claude** (Claude.ai and Claude Desktop).
 
@@ -8,7 +8,7 @@ Transform Claude into an elite technical SEO auditor, AI search visibility strat
 
 ---
 
-## 📦 Included Skills
+## Included Skills
 
 | Skill Name | Directory | Core Capabilities |
 | :--- | :--- | :--- |
@@ -23,12 +23,12 @@ Transform Claude into an elite technical SEO auditor, AI search visibility strat
 
 ---
 
-## 🛠️ Step-by-Step Installation Guide
+## Installation Guide
 
-Follow these simple steps to install any SEO skill into your Claude account:
+Follow these steps to install any SEO skill into your Claude account:
 
 1. **Open this GitHub repository** in your browser.
-2. Click the green **Code** button at the top right, select **Download ZIP**, and extract the ZIP file on your computer.
+2. Click the **Code** button at the top right, select **Download ZIP**, and extract the ZIP file on your computer.
 3. **Open the extracted folder** on your computer.
 4. **Choose the SEO skill** you want to install (e.g., `seo-intelligence`, `ai-search-intelligence`, etc.).
 5. Each SEO skill is stored in its own folder and contains a `SKILL.md` file.
@@ -60,13 +60,13 @@ seo-intelligence.zip
 
 ---
 
-> ℹ️ **Note:** Claude's interface and menu names may change over time. Follow the labels shown in your current Claude version.
+> **Note:** Claude's interface and menu names may change over time. Follow the labels shown in your current Claude version.
 > 
-> 📖 **Official Documentation:** For additional information on using skills in Claude, visit [Anthropic Support: Use skills in Claude](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
+> **Official Documentation:** For additional information on using skills in Claude, visit [Anthropic Support: Use skills in Claude](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
 
 ---
 
-## 🧑‍💻 How to Use the Skills
+## How to Use the Skills
 
 After installing and enabling a skill:
 
@@ -95,57 +95,59 @@ AI search citation and visibility gaps.
 
 ---
 
-## 🎯 Skill Quick Prompts & Usage Examples
+## Skill Quick Prompts & Usage Examples
 
-### 1. 🤖 AI Search Intelligence
+### 1. AI Search Intelligence
 ```text
 Analyze my website [https://example.com] for AI search visibility against our competitor [https://competitor.com]. Which queries are they being cited for in AI Overviews and Perplexity that we are missing?
 ```
 
-### 2. 📍 Google Business Profile Optimizer
+### 2. Google Business Profile Optimizer
 ```text
 Audit our Google Business Profile for [Business Name] located in [City, State]. We offer [List of Services]. Provide a prioritized local 3-pack optimization strategy focused on relevance, distance, and prominence.
 ```
 
-### 3. ✍️ SEO Content Engine
+### 3. SEO Content Engine
 ```text
 Create an in-depth content brief and outline targeting 'best crm for real estate agents'. Optimize for search intent, E-E-A-T credibility, and featured snippet eligibility.
 ```
 
-### 4. 🧠 SEO Intelligence & Opportunity Analyst
+### 4. SEO Intelligence & Opportunity Analyst
 ```text
 Here is our Google Search Console export and top underperforming URLs: [paste data]. Conduct a diagnostic analysis to identify why traffic declined and give me a prioritized fix roadmap.
 ```
 
-### 5. 📊 SEO Performance Monitor
+### 5. SEO Performance Monitor
 ```text
 Review this GSC search performance dataset: [paste metrics]. Detect CTR decay anomalies, identify high-impression/low-click opportunities, and generate an executive performance report.
 ```
 
-### 6. 🏷️ Structured Data & Schema Engine
+### 6. Structured Data & Schema Engine
 ```text
 Generate verified JSON-LD structured data for this page: [paste URL or content]. Include LocalBusiness, WebPage, and FAQPage schemas strictly based on verifiable on-page facts.
 ```
 
-### 7. 🔧 Technical & On-Page SEO Remediation
+### 7. Technical & On-Page SEO Remediation
 ```text
 Audit this page HTML and robots/canonical setup: [paste code]. Flag crawlability issues, indexation blockers, canonical discrepancies, and internal linking improvements.
 ```
 
-### 8. 🎯 User Intent & Content Auditor
+### 8. User Intent & Content Auditor
 ```text
 Audit our article targeting 'how to choose dental insurance'. Does our content genuinely fulfill commercial search intent compared to top SERP competitors, or is it generic?
 ```
 
 ---
 
-## 📂 Repository Directory Structure
+## Repository Directory Structure
 
 ```text
 claude-seo-skills/
 ├── .gitignore
 ├── LICENSE
 ├── README.md
+├── assets/
+│   └── claude-skill-usage-example.png
 ├── ai-search-intelligence/
 │   └── SKILL.md
 ├── google-business-profile-optimizer/
@@ -166,12 +168,12 @@ claude-seo-skills/
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, additional SEO skills, and optimizations are welcome! Feel free to open an issue or submit a pull request.
 
 ---
 
-## 📄 License
+## License
 
 This repository is open-source and available under the [MIT License](./LICENSE).
