@@ -87,8 +87,7 @@ After installing and enabling a skill:
 /ai-search-intelligence
 
 Analyze https://example.com for AI search visibility.
-Compare it with https://competitor.com and identify verified
-AI search citation and visibility gaps.
+Compare it with https://competitor.com and identify verified AI search citation and visibility gaps.
 ```
 
 ![Claude Skill Usage Example](./assets/claude-skill-usage-example.png)
