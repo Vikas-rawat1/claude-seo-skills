@@ -91,6 +91,8 @@ Compare it with https://competitor.com and identify verified
 AI search citation and visibility gaps.
 ```
 
+![Claude Skill Usage Example](./assets/claude-skill-usage-example.png)
+
 ---
 
 ## 🎯 Skill Quick Prompts & Usage Examples
