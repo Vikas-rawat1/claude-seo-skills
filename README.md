@@ -21,43 +21,87 @@ Turn Claude into a world-class SEO strategist, technical auditor, Google Busines
 
 ---
 
-## 🛠️ Step-by-Step Installation Guide
+## 🛠️ Installation Guide
 
-You can easily install these skills into Claude using any of the following methods.
-
-### 🌟 Method 1: Upload Directly in Claude (Recommended)
-
-1. Open **Claude** (Desktop App or Web at [claude.ai](https://claude.ai)).
-2. Click on **Customize** (or click your profile picture/name at the bottom-left/top-right).
-3. Select **Skills** from the sidebar menu.
-4. Click the **Add ▾** button at the top right.
-5. Click **Upload skill**.
-6. Select the folder of the skill you want to add (e.g., `ai-search-intelligence` or a `.zip` archive of the folder containing `SKILL.md`).
-7. Claude will automatically detect the skill name and capabilities. Click **Save**!
-
-> 💡 **Tip:** Repeat this step for each of the 8 skill folders you want active in your Claude workspace.
+Choose your preferred way to install and use these skills:
 
 ---
 
-### 📝 Method 2: Manual Copy & Paste ("Create a Skill")
+### 💻 Method 1: Using with Claude Code (CLI)
 
-If you prefer to manually configure skills inside Claude:
+You can install these skills either **globally** (available across all projects in Claude Code) or for a **specific project**.
 
-1. Go to **Customize** → **Skills** → **Add ▾** → **Create a skill**.
-2. Open the `SKILL.md` file from the skill folder in any text editor (Notepad, VS Code, etc.).
-3. **Skill Name**: Enter the name from the top frontmatter (e.g., `ai-search-intelligence`).
-4. **Description**: Copy the `description` line from the top YAML frontmatter.
-5. **Instructions / Prompt Content**: Copy the full text below the `---` header in `SKILL.md` and paste it into the instruction box.
-6. Click **Save**.
+#### Option A: Global Installation (Available in any directory)
+
+**On Windows (PowerShell):**
+```powershell
+# Clone the repository
+git clone https://github.com/Vikas-rawat1/claude-seo-skills.git
+
+# Create the global skills folder if it doesn't exist
+New-Item -ItemType Directory -Force -Path "$HOME\.claude\skills"
+
+# Copy all skill folders to your global Claude Code skills directory
+Copy-Item -Recurse -Force .\claude-seo-skills\* -Destination "$HOME\.claude\skills\"
+```
+
+**On macOS / Linux (Terminal):**
+```bash
+# Clone the repository
+git clone https://github.com/Vikas-rawat1/claude-seo-skills.git
+
+# Create the global skills directory
+mkdir -p ~/.claude/skills
+
+# Copy all skills into global Claude Code directory
+cp -r claude-seo-skills/* ~/.claude/skills/
+```
+
+#### Option B: Project-Level Installation (Current workspace only)
+
+Inside your project folder, create a `.claude/skills` directory and copy the skills:
+
+```bash
+# Inside your project root:
+mkdir -p .claude/skills
+cp -r /path/to/claude-seo-skills/* .claude/skills/
+```
+
+Claude Code CLI will automatically detect and load these skills during your coding and analysis sessions!
 
 ---
 
-### 📁 Method 3: Using in Claude Projects / Custom Instructions
+### 🖥️ Method 2: Upload in Claude Desktop or Web (claude.ai)
 
-If you are using **Claude Projects**:
-1. Open your Project in Claude.
-2. Go to **Project Knowledge** or **Custom Instructions**.
-3. Upload the `SKILL.md` file or paste its contents directly into the project's system prompt instructions.
+1. Open **Claude** (Desktop App or [claude.ai](https://claude.ai)).
+2. Click **Customize** in the left sidebar (or go to Settings → Skills).
+3. Under **Skills**, click the **Add ▾** button at the top right and select **Upload skill**.
+4. **Drag and drop** the `SKILL.md` file from any skill folder, or upload a `.zip` archive containing the skill folder.
+   > Claude supports:
+   > - `.md` files containing YAML frontmatter (`name` and `description`).
+   > - `.zip` or `.skill` files containing `SKILL.md`.
+5. Claude will perform a security scan and activate the skill. Click **Save**.
+6. Repeat for each skill you'd like enabled in your workspace.
+
+---
+
+### 📁 Method 3: Using in Claude Projects
+
+1. Open your desired **Project** in Claude.
+2. Click on **Project Knowledge** or **Custom Instructions**.
+3. Upload the `SKILL.md` file or copy and paste its contents directly into the Project Instructions.
+
+---
+
+### 📝 Method 4: Manual "Create a skill" in Claude
+
+1. In Claude, go to **Customize** → **Skills** → **Add ▾** → **Create a skill**.
+2. Open `SKILL.md` in your text editor.
+3. Fill in:
+   - **Skill Name**: Name from the frontmatter (e.g., `ai-search-intelligence`).
+   - **Description**: Description from the frontmatter.
+   - **Instructions**: All markdown instructions below the `---` header.
+4. Click **Save**.
 
 ---
 
