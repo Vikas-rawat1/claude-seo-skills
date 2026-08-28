@@ -66,6 +66,33 @@ seo-intelligence.zip
 
 ---
 
+## 🧑‍💻 How to Use the Skills
+
+After installing and enabling a skill:
+
+1. Open a new chat in Claude.
+2. In the message box, type `/` to open the available skills/commands.
+3. Select or type the name of the SEO skill you installed.
+4. The skill can be invoked using its skill name, for example:
+
+`/ai-search-intelligence`
+
+5. After selecting the skill, describe what you want Claude to analyze or accomplish.
+6. Provide the required URL, data, files, competitor URLs, GSC/GA4 exports, HTML, keywords, or other information needed for the specific task.
+7. Send the message and let the skill perform the appropriate SEO workflow.
+
+### Example:
+
+```text
+/ai-search-intelligence
+
+Analyze https://example.com for AI search visibility.
+Compare it with https://competitor.com and identify verified
+AI search citation and visibility gaps.
+```
+
+---
+
 ## 🎯 Skill Quick Prompts & Usage Examples
 
 ### 1. 🤖 AI Search Intelligence
