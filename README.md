@@ -1,8 +1,10 @@
 # 🚀 Claude SEO Skills Suite
 
-A production-grade collection of **8 specialized SEO & AI Search Skills** crafted for **Anthropic Claude** (Claude Code CLI, Claude Desktop, Claude.ai, and Claude Projects).
+A production-grade collection of **8 specialized SEO & AI Search Skills** crafted for **Anthropic Claude** (Claude.ai and Claude Desktop).
 
 Transform Claude into an elite technical SEO auditor, AI search visibility strategist, Google Business Profile specialist, structured data engineer, and conversion-focused content architect.
+
+> **Note:** Each folder in this repository is a separate SEO skill. Install only the skills you want to use.
 
 ---
 
@@ -23,114 +25,44 @@ Transform Claude into an elite technical SEO auditor, AI search visibility strat
 
 ## 🛠️ Step-by-Step Installation Guide
 
-Choose the method matching your Claude workflow:
+Follow these simple steps to install any SEO skill into your Claude account:
+
+1. **Open this GitHub repository** in your browser.
+2. Click the green **Code** button at the top right, select **Download ZIP**, and extract the ZIP file on your computer.
+3. **Open the extracted folder** on your computer.
+4. **Choose the SEO skill** you want to install (e.g., `seo-intelligence`, `ai-search-intelligence`, etc.).
+5. Each SEO skill is stored in its own folder and contains a `SKILL.md` file.
+6. You can install a skill using either of these two ways:
+   - **Option A (Direct File)**: Upload the individual `SKILL.md` file directly, **OR**
+   - **Option B (ZIP Package)**: ZIP the individual skill folder and upload the ZIP.
+7. **Open Claude** (on [claude.ai](https://claude.ai) or the Claude Desktop app).
+8. Go to:
+   **Settings** → **Customize** → **Skills** *(or click **Customize** → **Skills** in the sidebar)*.
+9. Click **Upload a skill** *(or click **+** / **Add** → **Upload a skill**)*.
+10. **Select the `SKILL.md` file or the ZIP package** for your chosen skill.
+11. Claude performs a security scan when the skill is saved.
+12. Click **Save** and make sure the skill is **enabled**.
+13. **Repeat** for any other SEO skills you want to install.
 
 ---
 
-### 💻 Method 1: Installing in Claude Code (CLI)
+### Recommended ZIP Structure (Optional)
 
-Claude Code automatically loads custom skills placed in the `.claude/skills` directory.
-
-#### Option A: Global Install (Available across all projects & folders)
-
-**Windows (PowerShell):**
-```powershell
-# 1. Clone the repository
-git clone https://github.com/Vikas-rawat1/claude-seo-skills.git
-
-# 2. Create the global skills folder
-New-Item -ItemType Directory -Force -Path "$HOME\.claude\skills"
-
-# 3. Copy all skills to global Claude Code directory
-Copy-Item -Recurse -Force .\claude-seo-skills\* -Destination "$HOME\.claude\skills\"
-```
-
-**macOS / Linux (Terminal):**
-```bash
-# 1. Clone the repository
-git clone https://github.com/Vikas-rawat1/claude-seo-skills.git
-
-# 2. Create the global skills directory
-mkdir -p ~/.claude/skills
-
-# 3. Copy all skills into your global Claude Code directory
-cp -r claude-seo-skills/* ~/.claude/skills/
-```
-
----
-
-#### Option B: Project-Level Install (Specific project directory only)
-
-If you only want these SEO skills enabled inside a specific codebase or project folder:
-
-```bash
-# In your project's root folder:
-mkdir -p .claude/skills
-git clone https://github.com/Vikas-rawat1/claude-seo-skills.git temp-skills
-cp -r temp-skills/* .claude/skills/
-rm -rf temp-skills
-```
-
-Whenever you run `claude` in your terminal, Claude Code will automatically detect and load your SEO skills!
-
----
-
-### 🖥️ Method 2: Installing in Claude Desktop & Web ([claude.ai](https://claude.ai))
-
-To install custom skills in Claude Web or Desktop, package each skill as a ZIP archive containing the skill directory and upload it directly.
-
-#### Skill Packaging Requirement
-Each custom skill must be packaged as a ZIP archive containing the skill folder with its `SKILL.md`:
+If you prefer uploading skills as ZIP archives, package the skill folder like this:
 
 ```text
-skill-name.zip
-└── skill-name/
+seo-intelligence.zip
+└── seo-intelligence/
     └── SKILL.md
 ```
 
-#### Step-by-Step Instructions:
-1. **Download or clone** this repository to your computer:
-   ```bash
-   git clone https://github.com/Vikas-rawat1/claude-seo-skills.git
-   ```
-2. **Choose the skill folder** you want to install (e.g., `ai-search-intelligence`).
-3. **ZIP the entire skill folder** (e.g., compress `ai-search-intelligence/` into `ai-search-intelligence.zip`).
-4. **Open Claude** (Desktop App or [claude.ai](https://claude.ai)).
-5. Go to **Customize** → **Skills** (or **Settings** → **Skills** depending on your interface).
-6. Click **+** (or **Add**).
-7. Select **Create skill** / **Upload a skill** according to the current Claude UI.
-8. **Upload the ZIP** file.
-   > Claude may validate or scan the uploaded skill depending on your account/workspace configuration.
-9. **Enable the skill** and save.
-10. **Repeat** for any other SEO skills you wish to use.
+*(Note: ZIP packaging is optional. Uploading the standalone `SKILL.md` file directly is supported.)*
 
-> ℹ️ **Important Note:** UI labels, button placements, and menu options may change over time as Anthropic updates the interface. Follow the current labels shown in your Claude account.
+---
+
+> ℹ️ **Note:** Claude's interface and menu names may change over time. Follow the labels shown in your current Claude version.
 > 
-> 📖 **Official Documentation:** For official details and updates on skill management, see [Anthropic Support: Use skills in Claude](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
-
----
-
-### 📁 Method 3: Using in Claude Projects
-
-If you organize your workflows into Claude Projects:
-
-1. Open your Project in **Claude** ([claude.ai/projects](https://claude.ai/projects)).
-2. In the right panel, go to **Project Knowledge** or **Set Custom Instructions**.
-3. Upload the `SKILL.md` file of your desired skill as Project Knowledge, or paste its markdown text directly into the Project Instructions.
-
----
-
-### 📝 Method 4: Manual "Create a skill" in Claude
-
-If you prefer copy-pasting directly into Claude's skill builder:
-
-1. In Claude, go to **Customize** → **Skills** → **+** (or **Add**) → **Create a skill**.
-2. Open the `SKILL.md` file of any skill in a text editor.
-3. Fill in the fields:
-   - **Name**: Copy the `name:` value from the top YAML frontmatter (e.g., `ai-search-intelligence`).
-   - **Description**: Copy the `description:` value from the frontmatter.
-   - **Instructions**: Copy the entire markdown content located below the frontmatter `---` separator.
-4. Click **Save**.
+> 📖 **Official Documentation:** For additional information on using skills in Claude, visit [Anthropic Support: Use skills in Claude](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
 
 ---
 
